@@ -1,0 +1,7 @@
+<svg width="250" height="350" xmlns="http://www.w3.org/2000/svg">
+      <rect width="250" height="350" rx="20" fill="#f0f0f0"/>
+      <rect x="15" y="25" width="220" height="300" rx="10" fill="#000"/>
+      <circle cx="125" cy="40" r="5" fill="#333"/>
+      <text x="125" y="180" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16">iPad Air</text>
+      <text x="125" y="200" text-anchor="middle" fill="#999" font-family="Arial" font-size="10">Versatile Tablet</text>
+    </svg>
