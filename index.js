@@ -49,9 +49,7 @@ app.use(cors({
     if (!origin && process.env.NODE_ENV !== 'production') return callback(null, true);
     
     const allowedOrigins = [
-      process.env.FRONTEND_URL || 'http://localhost:3004',
-      'http://localhost:3000',
-      'http://localhost:3001'
+      process.env.FRONTEND_URL 
     ];
     
     if (allowedOrigins.indexOf(origin) !== -1) {
@@ -74,7 +72,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/fastdeal'
 .then(() => console.log('✅ Connected to MongoDB'))
 .catch((err) => {
   console.warn('⚠️ MongoDB connection failed:', err.message);
-  console.log('🔄 Serveur fonctionnera sans MongoDB (uploads et routes statiques disponibles)');
 });
 
 // Health check
