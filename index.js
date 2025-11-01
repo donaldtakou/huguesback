@@ -44,7 +44,7 @@ app.use(limiter);
 // Middleware
 app.use(morgan('combined'));
 app.use(cors({
-  origin:https://huguesfront.onrender.com
+  origin:'https://huguesfront.onrender.com'
   credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));
