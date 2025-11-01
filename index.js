@@ -44,21 +44,7 @@ app.use(limiter);
 // Middleware
 app.use(morgan('combined'));
 app.use(cors({
-  origin: function (origin, callback) {
-    // Permettre les requêtes sans origin (fichiers locaux) en développement
-    if (!origin && process.env.NODE_ENV !== 'production') return callback(null, true);
-    
-    const allowedOrigins = [
-      process.env.FRONTEND_URL 
-    ];
-    
-    if (allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      console.log('❌ CORS blocked origin:', origin);
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
+  origin:https://huguesfront.onrender.com
   credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));
